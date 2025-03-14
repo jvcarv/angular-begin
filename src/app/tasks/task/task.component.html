@@ -1,9 +1,10 @@
+<app-card>
 <article>
   <h2>{{taskName}}</h2>
-  <time>{{taskDate}}</time>
+  <time>{{taskDate | date:'fullDate'}}</time>
   <p>{{taskSummary}}</p>
   <p class="actions">
     <button (click)="onCompleteTask()">Complete</button>
   </p>
 </article>
-
+</app-card>
